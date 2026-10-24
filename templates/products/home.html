@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Information Platform</title>
+  <link rel="stylesheet" href="{% static 'products/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <h1>Product Information Platform</h1>
+    </header>
+
+    <main>
+      <p>Welcome! Choose an option below to get started.</p>
+      <nav class="main-nav">
+        <a class="button" href="{% url 'product_submit' %}">Submit Product Information</a>
+        <a class="button" href="{% url 'product_list' %}">View All Products</a>
+      </nav>
+    </main>
+  </div>
+</body>
+</html>
